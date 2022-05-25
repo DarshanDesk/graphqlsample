@@ -15,14 +15,14 @@ import lombok.*;
 public class Logon {
 
     @CsvBindByPosition(position = 0)
-    String metricCriteria;
+    private String metricCriteria;
 
     @CsvBindByPosition(position = 1)
-    String channel;
+    private  String channel;
 
     @CsvBindByPosition(position = 2)
-    LocalDateTime eventTimeStamp;
+    private String eventTimeStamp;
 
     @CsvBindByPosition(position = 3)
-    Long counter;
+    private Long counter;
 }

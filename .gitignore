@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Maven
+.mvn/
+
+## MacOs
+**/.DS_Store
