@@ -1,0 +1,7 @@
+{
+  logonMetricsByChannel(channel: "WEB"){
+  filterCriteria
+  eventTimeStamp
+  metricCount
+}
+}

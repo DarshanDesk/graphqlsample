@@ -1,9 +1,9 @@
 package com.darshan.graphqlsample.repository;
 
-import com.darshan.graphqlsample.model.csv.Logon;
+import com.darshan.graphqlsample.model.csv.LogonEvent;
 
 import java.util.List;
 
 public interface CSVLoader {
-    List<Logon> loadLogonMetrics(String path);
+    List<LogonEvent> loadLogonMetrics(String path);
 }

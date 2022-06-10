@@ -1,19 +1,17 @@
 package com.darshan.graphqlsample.utils;
 
-import lombok.RequiredArgsConstructor;
 
-
-public enum MetricsConstants {
+public enum MetricsCriteria {
     MONTHLY(Constants.CRITERIA_MONTHLY);
 
-    private MetricsConstants(String label){
+    MetricsCriteria(String label){
         this.label = label;
     }
 
     public final String label;
 
-    public static MetricsConstants valueOfLabel(String label) {
-        for (MetricsConstants metricsConstant : values()) {
+    public static MetricsCriteria valueOfLabel(String label) {
+        for (MetricsCriteria metricsConstant : values()) {
             if (metricsConstant.label.equals(label)) {
                 return metricsConstant;
             }

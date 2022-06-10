@@ -1,18 +1,19 @@
 package com.darshan.graphqlsample.services;
 
-import com.darshan.graphqlsample.model.csv.Logon;
+import com.darshan.graphqlsample.model.csv.LogonEvent;
+import com.darshan.graphqlsample.model.schema.LogonMetric;
 import org.reactivestreams.Publisher;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.YearMonth;
 import java.util.List;
 import java.util.Map;
 
 public interface LogonService {
 
-    List<Logon> getLogonMetricsByChannelAndCriteria(String channel, String criteria, YearMonth fromDate, YearMonth toDate);
+    List<LogonMetric> filterLogonMetricsByChannelAndCriteria(String channel, String criteria, String fromSelection, String toSelection);
 
-    Publisher<Logon> getLogonPublisher();
+    List<LogonMetric> filterLogonMetricsByChannel(String channel);
+
+    Map<String, List<LogonMetric>> getAllLogonMetrics(List<String> channels);
+
+    Publisher<LogonEvent> getLogonPublisher();
 
 }

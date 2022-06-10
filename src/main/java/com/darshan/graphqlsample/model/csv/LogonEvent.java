@@ -1,18 +1,16 @@
 package com.darshan.graphqlsample.model.csv;
 
-import java.time.LocalDateTime;
 import com.opencsv.bean.CsvBindByPosition;
 import lombok.*;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @EqualsAndHashCode
-public class Logon {
+public class LogonEvent {
 
     @CsvBindByPosition(position = 0)
     private String metricCriteria;

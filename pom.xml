@@ -22,6 +22,7 @@
 		<dgs.codegen.version>5.1.16</dgs.codegen.version>
 		<sb.version>2.6.7</sb.version>
 		<opencsv.version>5.6</opencsv.version>
+		<google-cloud-storage.version>2.7.2</google-cloud-storage.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,14 +71,18 @@
 			<artifactId>javafaker</artifactId>
 			<version>${javafaker.version}</version>
 		</dependency>
-
 		<!-- Reading CSV -->
 		<dependency>
 			<groupId>com.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
 			<version>${opencsv.version}</version>
 		</dependency>
-
+		<!--Google Cloud Storage -->
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-storage</artifactId>
+			<version>${google-cloud-storage.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
